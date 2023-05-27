@@ -1,8 +1,7 @@
-export function App(props) {
-    console.log(props)
+const App = () => {
     return (
         <div>
-            <h3>I'm App! {props.ad} {props.soyad}</h3>
         </div>
     )
 }
+export default App;
