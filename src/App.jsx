@@ -1,9 +1,11 @@
+import Posts from "./page/Posts";
 import Users from "./page/Users";
 
 const App = () => {
     return (
         <>
-            <Users />
+            {/* <Users /> */}
+            <Posts />
         </>
     )
 }
