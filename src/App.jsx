@@ -1,11 +1,9 @@
-import Posts from "./page/Posts";
-import Users from "./page/Users";
+import Countries from "./page/Countries";
 
 const App = () => {
     return (
         <>
-            {/* <Users /> */}
-            <Posts />
+            <Countries />
         </>
     )
 }
