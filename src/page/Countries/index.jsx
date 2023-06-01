@@ -1,6 +1,5 @@
 import axios from "axios"
-import { useState } from "react"
-import { useEffect } from "react"
+import { useState, useEffect } from "react"
 
 const url = "https://restcountries.com/v3.1/all"
 
@@ -29,7 +28,7 @@ const Countries = () => {
                     return (
                         <div key={country.name.common}>
                             <img src={country.flags.png} alt="" />
-                            <h3>{country.name.official}
+                            <h3>{country.name.common}
                                 <button onClick={() => deleteCountry(country.name.common)}>x</button>
                             </h3>
                             <h4>{country.capital && country.capital[0]}</h4>
