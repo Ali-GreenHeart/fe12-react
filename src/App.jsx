@@ -1,9 +1,9 @@
-import Countries from "./page/Countries";
+import About from "./page/About";
 
 const App = () => {
     return (
         <>
-            <Countries />
+            <About />
         </>
     )
 }
