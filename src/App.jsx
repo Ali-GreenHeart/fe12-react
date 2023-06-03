@@ -1,19 +1,10 @@
-import { useState } from "react";
-import About from "./page/About";
+import Windows from "./components/Windows";
 
 const App = () => {
-    const [show, setShow] = useState(false)
 
     return (
         <>
-            <button
-                onClick={() => {
-                    setShow(!show)
-                }}
-            >toggle</button>
-            {
-                show && <About />
-            }
+            <Windows />
         </>
     )
 }
