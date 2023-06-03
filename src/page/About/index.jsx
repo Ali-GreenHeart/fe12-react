@@ -5,6 +5,13 @@ let randomIndex;
 
 const About = () => {
     const [name, setName] = useState('')
+
+    useEffect(() => {
+        console.log('men geldim...')
+        return () => {
+            console.log('ayyyyyyy ☠')
+        }
+    }, [])
     useEffect(() => {
         randomIndex = Math.floor(Math.random() * colors.length)
     }, [name])
