@@ -1,4 +1,10 @@
+import { useContext } from "react"
+import { DataContext } from "../../context/DataContext"
+
 const PageContainer = ({ children }) => {
+
+    const obj = useContext(DataContext)
+
     return (
         <>
             <nav>
@@ -8,7 +14,7 @@ const PageContainer = ({ children }) => {
                 <a href="/mezunlar">mezunlar</a>
                 <a href="/countries">countries</a>
             </nav>
-
+            <p>I'm {obj.ad}</p>
             <main>
                 {children}
             </main>
