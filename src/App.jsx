@@ -1,10 +1,9 @@
-import Windows from "./components/Windows";
+import WebRouting from "./routes";
 
 const App = () => {
-
     return (
         <>
-            <Windows />
+            <WebRouting />
         </>
     )
 }
