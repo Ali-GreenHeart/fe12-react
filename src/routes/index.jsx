@@ -10,6 +10,7 @@ const WebRouting = () => {
             <Route path="/contact" element={<div>salam contact page</div>} />
             <Route path="/mezunlar" element={<div>mezunlar....</div>} />
             <Route path="/tedris-saheleri" element={<div>tedris saheleri</div>} />
+            <Route path="*" element={<p>Not found 404!</p>} />
         </Routes>
     )
 }
