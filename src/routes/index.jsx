@@ -1,14 +1,19 @@
 import { Route, Routes } from "react-router";
 import About from "../page/About";
 import Users from "../page/Users";
+import Home from "../page/Home";
+import Contact from "../page/Contact";
+import Countries from "../page/Countries";
 
 const WebRouting = () => {
     return (
         <Routes>
-            <Route path="/" element={<Users />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/users" element={<Users />} />
             <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<div>salam contact page</div>} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/mezunlar" element={<div>mezunlar....</div>} />
+            <Route path="/countries" element={<Countries />} />
             <Route path="/tedris-saheleri" element={<div>tedris saheleri</div>} />
             <Route path="*" element={<p>Not found 404!</p>} />
         </Routes>
