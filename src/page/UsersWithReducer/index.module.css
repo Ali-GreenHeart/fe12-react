@@ -1,0 +1,24 @@
+.user {
+    border: 1px solid green;
+    padding: 10px;
+    margin: 10px;
+}
+
+.heading {
+    font-size: 32px;
+    color: teal;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.email {
+    font-family: cursive;
+    color: red;
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 28px;
+}
+
+.removeBtn {
+    float: right;
+}
