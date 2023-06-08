@@ -18,3 +18,7 @@
     text-transform: lowercase;
     font-size: 28px;
 }
+
+.removeBtn {
+    float: right;
+}
