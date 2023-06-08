@@ -5,13 +5,13 @@ const url = 'https://jsonplaceholder.typicode.com/users'
 
 const reducer = (state, action) => {
     switch (action.type) {
+        case 'delete':
+            const newState = state.filter((user) => user.id !== action.payload)
+            return newState
         case "get_users":
             return action.payload;
         case 'sil_birinci':
             return state.slice(1)
-        case 'delete':
-            const newState = state.filter((user) => user.id !== action.payload)
-            return newState
         default:
             return state;
     }
@@ -24,7 +24,6 @@ const UsersWithReducer = () => {
             dispatch({ type: "get_users", payload: data })
         })
     }, [])
-    console.log("users", users)
     return (
         <>
             <h1>welcome users with reducer page</h1>
