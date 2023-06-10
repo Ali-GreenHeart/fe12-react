@@ -5,6 +5,7 @@ import Home from "../page/Home";
 import Contact from "../page/Contact";
 import Countries from "../page/Countries";
 import UsersWithReducer from "../page/UsersWithReducer";
+import LearnMUI from "../page/LearnMUI";
 
 const WebRouting = () => {
     return (
@@ -14,6 +15,7 @@ const WebRouting = () => {
             <Route path="/users-with-reducer" element={<UsersWithReducer />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/learn-mui" element={<LearnMUI />} />
             <Route path="/mezunlar" element={<div>mezunlar....</div>} />
             <Route path="/countries" element={<Countries />} />
             <Route path="/tedris-saheleri" element={<div>tedris saheleri</div>} />
